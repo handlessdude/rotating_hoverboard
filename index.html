@@ -3,16 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="icon.ico">
   <title>Glow!</title>
 </head>
 <body>
-<div class="container" id="board" degree="45">
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-</div>
+  <div class="rotate-button-div">
+    <button class="rotate-button" id="rotate-button">
+      <i class="fas fa-redo" style="cursor: pointer;"></i>
+    </button>
+  </div>
+  <div class = "cont-div">
+    <div class="container" id="board" degree="45"></div>
+  </div>
+  <div class="info-cont-div">
+    <div class="info-cont" id ="info-cont">
+      <div class="info-color" id ="info-color"></div>
+      <h4 id="color-label"></h4>
+      <button class="close-btn" id="close-btn">&#x2613</button>
+    </div>
+  </div>
 <script src="app.js"></script>
+
 </body>
 </html>
